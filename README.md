@@ -1,13 +1,29 @@
 # Hướng dẫn nạp code cho board ESP32-S3 Breadboard chạy firmware chat bot AI XIAOZHI 
  Quá trình nạp firmware cho board **ESP32-S3 Breadboard**, sử dụng **ESP Launchpad Web Flasher** của Espressif.
 
- **Release version** : 3.0.0
+ **Release version** : 
+ 
+ **3.0.0**
  
  - Cập nhật phát nhạc tiếng Việt 
 
  - Tùy chỉnh wakeword thông qua cấu hình webserver
 
+ - Firmware file:
+    - `esp32s3_bread_board_oled128x32_3-0-0.bin`
+    - `esp32s3_bread_board_oled128x64_3-0-0.bin`
 
+ **3.0.1**
+
+ - Thêm cấu hình độ nhạy cho wakeword
+
+ - Tự động cập nhật firmware mới không cần nạp thủ công. 
+ 
+    Lưu ý: để tự động cập nhật firmware các bạn cần thêm đường dẫn sau vào OTA URL: `https://raw.githubusercontent.com/QuangThai2297/XIAOZHI_FW_RELEASE/refs/heads/ota/ota.txt`
+
+    ![Board Front](image/config_chatbot.png)
+ - Firmware file: 
+    - `esp32s3_bread_board_oled128x64_3-0-1.bin`
 ---
 
 ## 1️⃣ Giới thiệu board
@@ -18,11 +34,7 @@
 **Mặt sau:**
 ![Board Behind](image/board_behind.jpg)
 
-Board có thể kết nối trực tiếp với máy tính qua cổng USB-C, và tương thích với các phiên bản firmware dành cho màn hình OLED:
-- `esp32s3_bread_board_oled128x32_3-0-0.bin`
-- `esp32s3_bread_board_oled128x64_3-0-0.bin`
-
----
+Board có thể kết nối trực tiếp với máy tính qua cổng USB-C, và tương thích với các phiên bản màn hình oled 128*64
 
 ## 2️⃣ Nạp code qua ESP Launchpad
 

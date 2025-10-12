@@ -1,0 +1,1 @@
+{ "firmware": { "version": "3.0.1", "url": "https://raw.githubusercontent.com/QuangThai2297/XIAOZHI_FW_RELEASE/refs/heads/ota/only_ota_esp32s3_bread_board_oled128x64_3-0-1.bin" } }
